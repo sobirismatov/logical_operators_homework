@@ -6,4 +6,4 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    return a==int(a) and 99<a and 1000>a
