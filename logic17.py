@@ -6,4 +6,10 @@ def main(a):
     Returns:
         bool: answer
     """
-    return  a%10<a//10%10 and a//10%10<a//100%10 and a//100%10<a//1000%10 and a//1000%10 <a//10000
+    x1=a//10000
+    x2=a//1000%10
+    x3=a//100%10
+    x4=a//10%10
+    x5=a%10
+    return x5>x4 and x4>x3 and x3>x2 and x2>x1
+print(main(12345))
